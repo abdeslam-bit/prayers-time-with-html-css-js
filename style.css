@@ -1,0 +1,132 @@
+:root{
+    --color:rgba(199, 199, 199, 0.6);
+}
+body{
+    height: 100vh;
+    background-image: url(myImg/islamic-background-ramadan-kareem-mosque-silhouette-design-illustration-ramadan-kareem-design-similar-for-greetings-invitations-templates-banners-websites-or-background-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Roboto;
+    text-align: center;
+    margin: 0px;
+
+}
+.any{
+    height: 100px;
+    width: 100px;
+}
+.containContryes{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+}
+select{
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 15px;
+    background-color: var(--color);
+    color: rgb(38, 33, 25);
+    margin-top: 20px;
+}
+#info{
+    width: 390px;
+    min-width: 390px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+#info span{
+    font-size: 35px;
+}
+.times{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    flex-wrap: wrap;
+    direction: rtl;
+}
+.times div{
+    height: 150px;
+    width: 150px;
+    background-color: var(--color);
+}
+.times div:nth-child(odd) {
+    animation: topBottom 2s infinite ease-in-out;
+}
+
+.times div:nth-child(even) {
+    animation: bottomTop 2s infinite ease-in-out;
+}
+
+@keyframes topBottom {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }        
+}
+
+@keyframes bottomTop {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }        
+}
+@media (max-width:450px){
+    .times{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 50vh;
+        flex-wrap: wrap;
+        direction: rtl;
+        margin-top: 20px;
+    }
+    .times div{
+        height: 130px;
+        width: 130px;
+        gap: 10px;
+    }
+}
+.times div span{
+    font-size: 28px;
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    color: white;
+}
+.times div span:nth-child(2){
+    border: none;
+}
+
